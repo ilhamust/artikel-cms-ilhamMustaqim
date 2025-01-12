@@ -16,7 +16,7 @@ use CodeIgniter\Config\Routing as BaseRouting;
 /**
  * Routing configuration
  */
-class Routing extends BaseRouting
+    class Routing extends BaseRouting
 {
     /**
      * An array of files that contain route definitions.
