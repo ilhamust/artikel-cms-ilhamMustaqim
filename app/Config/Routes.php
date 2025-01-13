@@ -9,3 +9,4 @@ $routes->get('/', 'Home::index');
 
 //routers admin dashbord
 $routes->get('dashboard', 'Admin\DashboardController::index');
+$routes->get('login', 'Admin\LoginController::index');
