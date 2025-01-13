@@ -74,7 +74,7 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="artikel-nuxt-js.html" class="text-decoration-none">Belajar Nuxt JS di SantriKoding</a>
+                  <a href="artikel-nuxt-js.html" class="text-decoration-none">Belajar Nuxt JS</a>
                 </h5>
                 <p class="card-text">Tutorial mendalam mengenai Nuxt JS.</p>
                 <p class="text-muted">Minggu, 02 Mei 2021 | 4 Komentar</p>
@@ -91,7 +91,7 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="artikel-laravel.html" class="text-decoration-none">Belajar Laravel di SantriKoding</a>
+                  <a href="artikel-laravel.html" class="text-decoration-none">Belajar Laravel</a>
                 </h5>
                 <p class="card-text">Dasar-dasar Laravel untuk pemula.</p>
                 <p class="text-muted">Minggu, 02 Mei 2021 | 0 Komentar</p>
