@@ -37,4 +37,14 @@ class LoginController extends BaseController
 
         return redirect()->back(); // Kembali ke halaman login
     }
+    public function logout()
+    {
+        $session = session();
+
+        // Hapus semua data session
+        $session->destroy();
+
+        // Redirect ke halaman login
+        return redirect()->to('/login')->with('success', 'Anda telah logout.');
+    }
 }
