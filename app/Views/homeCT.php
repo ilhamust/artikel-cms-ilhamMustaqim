@@ -44,37 +44,59 @@
     <img src="<?= base_url('styleCT') ?>/img/banner.jpg" alt="Banner" class="img-fluid rounded">
   </div>
 
-
   <div class="container">
     <div class="row">
       <!-- Tutorial Section -->
       <div class="col-md-8">
         <h3>Artikel Tutorial</h3>
         <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="artikel-laravel-8.html" class="text-decoration-none">Instalasi Laravel 8</a>
-            </h5>
-            <p class="card-text">Panduan untuk menginstal Laravel 8 secara lengkap.</p>
-            <p class="text-muted">Jumat, 07 Mei 2021 | 0 Komentar</p>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="<?= base_url('styleCT') ?>/img/laravel-8.jpg" class="img-fluid rounded-start" alt="Laravel 8">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="artikel-laravel-8.html" class="text-decoration-none">Instalasi Laravel 8</a>
+                </h5>
+                <p class="card-text">Panduan untuk menginstal Laravel 8 secara lengkap.</p>
+                <p class="text-muted">Jumat, 07 Mei 2021 | 0 Komentar</p>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="artikel-nuxt-js.html" class="text-decoration-none">Belajar Nuxt JS di SantriKoding</a>
-            </h5>
-            <p class="card-text">Tutorial mendalam mengenai Nuxt JS.</p>
-            <p class="text-muted">Minggu, 02 Mei 2021 | 4 Komentar</p>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="<?= base_url('styleCT') ?>/img/nuxt-js.jpg" class="img-fluid rounded-start" alt="Nuxt JS">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="artikel-nuxt-js.html" class="text-decoration-none">Belajar Nuxt JS di SantriKoding</a>
+                </h5>
+                <p class="card-text">Tutorial mendalam mengenai Nuxt JS.</p>
+                <p class="text-muted">Minggu, 02 Mei 2021 | 4 Komentar</p>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="artikel-laravel.html" class="text-decoration-none">Belajar Laravel di SantriKoding</a>
-            </h5>
-            <p class="card-text">Dasar-dasar Laravel untuk pemula.</p>
-            <p class="text-muted">Minggu, 02 Mei 2021 | 0 Komentar</p>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="<?= base_url('styleCT') ?>/img/laravel.jpg" class="img-fluid rounded-start" alt="Laravel">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="artikel-laravel.html" class="text-decoration-none">Belajar Laravel di SantriKoding</a>
+                </h5>
+                <p class="card-text">Dasar-dasar Laravel untuk pemula.</p>
+                <p class="text-muted">Minggu, 02 Mei 2021 | 0 Komentar</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -151,7 +173,6 @@
       <p class="mb-0 text-secondary" style="font-size: 0.85rem;">Copyright © 2025 Petani Kode. All Rights Reserved.</p>
     </div>
   </div>  
-  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
