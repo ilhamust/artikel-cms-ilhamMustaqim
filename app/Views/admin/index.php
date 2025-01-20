@@ -17,7 +17,13 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('assets-admin') ?>/css/sb-admin-2.min.css" rel="stylesheet">
-
+    <!-- DataTables Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <?= $this->renderSection('styles') ?>
 </head>
 
@@ -33,20 +39,20 @@
 
             <!-- Main Content -->
             <div id="content">
-                    <!-- Topbar -->
-                    <?= $this->include('admin/components/topbar') ?>
-                    <!-- End of Topbar -->
-                    <!-- Begin Page Content -->
-                    <?= $this->renderSection('content') ?>
-                    <!-- /.container-fluid -->
-                </div>
+                <!-- Topbar -->
+                <?= $this->include('admin/components/topbar') ?>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <?= $this->renderSection('content') ?>
+                <!-- /.container-fluid -->
+            </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Ilham Mustaqim <?= date('Y')?></span>
+                        <span>Copyright &copy; Ilham Mustaqim <?= date('Y') ?></span>
                     </div>
                 </div>
             </footer>

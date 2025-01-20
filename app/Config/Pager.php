@@ -24,8 +24,17 @@ class Pager extends BaseConfig
         'default_full'   => 'CodeIgniter\Pager\Views\default_full',
         'default_simple' => 'CodeIgniter\Pager\Views\default_simple',
         'default_head'   => 'CodeIgniter\Pager\Views\default_head',
+        'bootstrap_full' => 'App\Views\Pagers\bootstrap_full',
     ];
-
+    public $bootstrap_full = [
+        'full'      => '<nav><ul class="pagination justify-content-end">{links}</ul></nav>',
+        'active'    => '<li class="page-item active"><span class="page-link">{text}</span></li>',
+        'disabled'  => '<li class="page-item disabled"><span class="page-link">{text}</span></li>',
+        'previous'  => '<li class="page-item"><a href="{uri}" class="page-link">{text}</a></li>',
+        'next'      => '<li class="page-item"><a href="{uri}" class="page-link">{text}</a></li>',
+        'page'      => '<li class="page-item"><a href="{uri}" class="page-link">{text}</a></li>',
+    ];
+    
     /**
      * --------------------------------------------------------------------------
      * Items Per Page

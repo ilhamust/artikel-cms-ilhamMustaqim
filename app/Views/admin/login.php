@@ -13,17 +13,18 @@
 
 <body>
     <main>
-        <form action="<?= base_url('/login') ?>" method="POST" id="loginForm" class="login-input">
-            <h1>Login Dashboard CMS</h1>
-            <?php if (session()->getFlashdata('error')) : ?>
-                <p style="color: red;"><?= session()->getFlashdata('error') ?></p>
-            <?php endif; ?>
-            <label for="inputUser">Username</label>
-            <input name="user" id="inputUser" type="text" required />
-            <label for="inputPassword">Password</label>
-            <input name="password" id="inputPassword" type="password" required />
-            <button name="login" id="buttonLogin" type="submit">Login</button>
-        </form>
+    <form action="<?= base_url('/login') ?>" method="POST" id="loginForm" class="login-input">
+    <h1>Login Dashboard CMS</h1>
+    <?php if (session()->getFlashdata('error')) : ?>
+        <p style="color: red;"><?= session()->getFlashdata('error') ?></p>
+    <?php endif; ?>
+    <label for="inputUser">Username</label>
+    <input name="user" id="inputUser" type="text" required />
+    <label for="inputPassword">Password</label>
+    <input name="password" id="inputPassword" type="password" required />
+    <button name="login" id="buttonLogin" type="submit">Login</button>
+</form>
+
     </main>
 </body>
 

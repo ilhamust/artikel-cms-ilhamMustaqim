@@ -1,8 +1,8 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('/dashboard'); ?>">>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('/dashboard'); ?>">
         <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+            <i class="fas fa-home"></i>
         </div>
         <div class="sidebar-brand-text mx-3">Dashboard Admin</div>
     </a>
@@ -19,30 +19,25 @@
     <!-- Nav Item - Tables -->
     <li class="nav-item">
         <a class="nav-link" href="<?= base_url('/tags'); ?>">
-        <i class="fas fa-fw fa-table"></i>
+        <i class="fas fa-fw fa-tags"></i>
         <span>Tags</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('/Categories'); ?>">
-        <i class="fas fa-fw fa-table"></i>
+        <a class="nav-link" href="<?= base_url('/categories'); ?>">
+        <i class="fas fa-fw fa-folder"></i>
         <span>Categories</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('/Posts'); ?>">
-        <i class="fas fa-fw fa-table"></i>
+        <a class="nav-link" href="<?= base_url('/posts'); ?>">
+        <i class="fas fa-fw fa-file-alt"></i>
         <span>Posts</span></a>
     </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-        <i class="fas fa-fw fa-table"></i>
-        <span>Sliders</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-        <i class="fas fa-fw fa-table"></i>
+        <a class="nav-link" href="<?= base_url('/users'); ?>">
+        <i class="fas fa-fw fa-users"></i>
         <span>Users</span></a>
     </li>
     <!-- Sidebar Toggler (Sidebar) -->

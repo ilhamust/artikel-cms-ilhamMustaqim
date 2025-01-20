@@ -23,16 +23,21 @@ class LoginController extends BaseController
         // Cari user di database
         $user = $userModel->where('username', $username)->first();
 
-        if ($password === $user['password']) { // Langsung dibandingkan
-            // Simpan data user ke session
-            $session->set([
-                'user_id' => $user['id'],
-                'username' => $user['username'],
-                'logged_in' => true,
-            ]);
-            return redirect()->to('/dashboard'); // Redirect ke dashboard
+        if ($user) {
+            // Verifikasi password
+            if (password_verify($password, $user['password'])) {
+                // Simpan data user ke session
+                $session->set([
+                    'user_id' => $user['id'],
+                    'username' => $user['username'],
+                    'logged_in' => true,
+                ]);
+                return redirect()->to('/dashboard'); // Redirect ke dashboard
+            } else {
+                $session->setFlashdata('error', 'Password salah!');
+            }
         } else {
-            $session->setFlashdata('error', 'Password salah!');
+            $session->setFlashdata('error', 'Username tidak ditemukan!');
         }
 
         return redirect()->back(); // Kembali ke halaman login
