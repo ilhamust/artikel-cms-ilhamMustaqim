@@ -1,68 +1,67 @@
-# CodeIgniter 4 Application Starter
+# Code Tutorial - CMS Artikel dengan CodeIgniter 4
+Code Tutorial adalah sebuah CMS berbasis web yang memungkinkan pengguna untuk membaca dan mengelola artikel secara efisien. Proyek ini dirancang menggunakan framework [CodeIgniter 4](https://codeigniter.com/) dan [Bootstrap](https://getbootstrap.com/) untuk tampilan antarmuka.
 
-## What is CodeIgniter?
+![Home Code Tutorial](public/styleCT/img/homeCT.png)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+![Dashboard Admin](public/styleCT/img/dashboard.png)
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## Fitur
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+- **Manajemen Artikel**: Tambah, edit, hapus, dan lihat daftar artikel.
+- **Kategori**: Pengelompokan artikel berdasarkan kategori.
+- **Pencarian**: Fitur pencarian artikel berdasarkan judul atau konten.
+- **Responsif**: Desain antarmuka yang responsif berkat integrasi dengan Bootstrap.
 
-## Installation & updates
+## Teknologi
+- **Framework**: CodeIgniter 4
+- **Frontend**: Bootstrap
+- **Database**: MySQL
+- **Lainnya**: PHP, JavaScript, jQuery
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+## Persyaratan Sistem
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+- **Web Server**: Apache atau Nginx
+- **PHP**: Versi 8.2
+- **Database**: MySQL 
+- **Composer**: Untuk manajemen dependensi PHP
 
-## Setup
+## Instalasi
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek ini di lingkungan lokal Anda:
 
-## Important Change with index.php
+1. **Clone Repository**: Clone repository ini ke direktori lokal Anda.
+   ```bash
+   git clone https://github.com/ilhamust/artikel-cms-ilhamMustaqim.git
+   cd artikel-cms-ilhamMustaqim
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+2. **Konfigurasi lingkungan**
+   - Salin file .env.example menjadi .env
+   - Atur konfigurasi database di .env
+      ```bash
+      database.default.hostname = localhost
+      database.default.database = cms
+      database.default.username = root
+      database.default.password =
+      database.default.DBDriver = MySQLi
+      database.default.DBPrefix =
+      database.default.port = 3306
+    
+  3. **Jalankan Migrasi Database**
+     ```bash
+     php spark migrate
+     
+  4. **Jalankan Server Lokal**
+     ```bash
+     php spark serve
+     
+  5. **Akses melalui browser**
+     ```bash
+     http://localhost:8080
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+  6. **Akses Dashboard**
+     - Username : Ilham Mustaqim
+     - Password : 1234567
+     ```bash
+     http://localhost:8080/login
 
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> The end of life date for PHP 7.4 was November 28, 2022.
-> The end of life date for PHP 8.0 was November 26, 2023.
-> If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> The end of life date for PHP 8.1 will be November 25, 2024.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
